@@ -2,11 +2,6 @@
 
 ![alt text](http://was-one.de/wp-content/themes/was/images/was_logo.png "position-pictures-centrally")
 
-
-Inline-style:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-
-
 With these few lines of Css,
 all images can be positioned centrally in a container.
 
@@ -20,3 +15,34 @@ format.
 
 In this example I used bootstrap to create the reason.
 But you do not need it.
+
+
+## Example
+
+### HTML
+```javascript
+<div class="img-wrap">
+  <img src="http://via.placeholder.com/400x400" alt="Placeholder">
+</div>
+```
+
+***
+
+### CSS
+```javascript
+.img-wrap{
+  position: relative;
+  overflow: hidden;
+  min-height: 200px;
+}
+.img-wrap img{
+  position: absolute;
+  top: -100%;
+  right: -100%;
+  bottom: -100%;
+  left: -100%;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+```
