@@ -37,10 +37,7 @@ But you do not need it.
 }
 .img-wrap img{
   position: absolute;
-  top: -100%;
-  right: -100%;
-  bottom: -100%;
-  left: -100%;
+  inset: -100%;
   margin: auto;
   max-width: 100%;
   max-height: 100%;
