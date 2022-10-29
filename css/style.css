@@ -1,13 +1,41 @@
+:root{
+    --primary: #2fabb9;
+    --secondary: #3dedc4;
+    --white: #fff;
+    --whiteRGB: 255,255,255;
+    --white_trans: rgba( var(--whiteRGB) ,0.6);
+    --black: rgba(0,0,0,1);
+    --blackRGB: 0,0,0;
+    --black_trans: rgba( var(--blackRGB) ,0.6);
+    --dark: #040404;
+    --darker: #0e0e0e;
+    --light: #f4f4f4;
+    --light_hover: #D8D8D8;
+    --grey: #ccc;
+    --darkgrey: #404040;
+    --error: #f00;
+    --success: #398f14;
+    --facebook: #3b5998;
+    --twitter: #55acee;
+    --whatsapp: #26B33D;
+    --pinterest: #BC2125;
+    --google: #DC4E41;
+    --youtube: #E52C27;
+    --primaryFont: 'Montserrat';
+    --secondaryFont: 'Comfortaa';  
+}
+
+
 .grey{
-  background: #f4f4f4;
+  background: var(--light);
 }
 
 .white{
-  background: #fff;
+  background: var(--white);
 }
 
 .shadow{
-  box-shadow: 0px 10px 10px -10px rgba(0,0,0,0.5);
+  box-shadow: 0px 10px 10px -10px rgba(var(--blackRGB),0.5);
 }
 
 .margintop{
